@@ -1,13 +1,31 @@
 # Backlog
 
-Ordered queue. Pull the next item into `01-now/now.md` when the current task is done.
+Ordered queue. Pull the next item into the matching `01-now/*.md` when the current task is done.
 
-**Active tracks:** DB (primary) + OS (parallel A) + Ruby (parallel B, optional)  
-See [engineering-track.md](../00-roadmap/engineering-track.md), [os-engineering-track.md](../00-roadmap/os-engineering-track.md), [ruby-engineering-track.md](../00-roadmap/ruby-engineering-track.md), [master-schedule.md](../00-roadmap/master-schedule.md)
+**Active tracks (方案 A):** Rails Store（工作之余主攻）+ DB（`now.md`）+ OS（parallel A）  
+**Paused:** Ruby R1–R4  
+
+See [rails-store-track.md](../00-roadmap/rails-store-track.md), [engineering-track.md](../00-roadmap/engineering-track.md), [os-engineering-track.md](../00-roadmap/os-engineering-track.md), [master-schedule.md](../00-roadmap/master-schedule.md)
 
 ---
 
-## Engineering track
+## Rails Store track（after-work focus）
+
+| # | Task | Status |
+|---|------|--------|
+| P1-A | [Bootstrap](../26-rails-store/tasks/p1a_bootstrap.md) | **not started** ← parallel-rails-store |
+| P1-B | [Product CRUD](../26-rails-store/tasks/p1b_product_crud.md) | not started |
+| P1-C | [Associations](../26-rails-store/tasks/p1c_associations.md) | not started |
+| P1-D | [Testing & Wrap](../26-rails-store/tasks/p1d_testing_and_wrap.md) | not started |
+| P2 | [Auth & Settings](../26-rails-store/tasks/p2_auth_and_settings.md) | not started |
+| P3 | [Wishlists](../26-rails-store/tasks/p3_wishlists.md) | not started |
+| P4 | [Reviews](../26-rails-store/tasks/p4_reviews.md) | not started |
+
+Roadmap: [rails-store-roadmap.md](../00-roadmap/rails-store-roadmap.md)
+
+---
+
+## Engineering track (DB)
 
 | # | Task | Focus | Status |
 |---|------|-------|--------|
@@ -44,7 +62,7 @@ See [engineering-track.md](../00-roadmap/engineering-track.md), [os-engineering-
 | K5 | Concurrency Control (P4) | not started |
 | K6 | Logging & Recovery (kernel study) | not started |
 
-## OS engineering track (parallel, secondary)
+## OS engineering track (parallel A)
 
 | # | Task | Status |
 |---|------|--------|
@@ -55,15 +73,15 @@ See [engineering-track.md](../00-roadmap/engineering-track.md), [os-engineering-
 | O5 | [Parallel & Async](../15-operating-systems/tasks/o5_parallel_and_async.md) | not started |
 | O6 | [I/O, FS & DB Bridge](../15-operating-systems/tasks/o6_io_fs_and_db_bridge.md) | not started |
 
-## Ruby engineering track (parallel B, ~2h/week)
+## Ruby engineering track（paused until Store done）
 
 | # | Task | Status |
 |---|------|--------|
-| R1 | [RubyMonk Ascent](../25-ruby/tasks/r1_rubymonk_ascent.md) | **not started** ← parallel-ruby |
-| R2 | [Metaprogramming Workshop](../25-ruby/tasks/r2_metaprogramming_workshop.md) | not started |
-| R3 | [Rails Internals](../25-ruby/tasks/r3_rails_internals.md) | not started |
-| R4 | [OO Design](../25-ruby/tasks/r4_oo_design.md) | not started |
+| R1 | [RubyMonk Ascent](../25-ruby/tasks/r1_rubymonk_ascent.md) | paused |
+| R2 | [Metaprogramming Workshop](../25-ruby/tasks/r2_metaprogramming_workshop.md) | paused |
+| R3 | [Rails Internals](../25-ruby/tasks/r3_rails_internals.md) | paused |
+| R4 | [OO Design](../25-ruby/tasks/r4_oo_design.md) | paused |
 
-## LeetCode (parallel, low priority)
+## LeetCode (lowest priority)
 
 See `30-leetcode/backlog.md` — do NOT let this block the engineering tracks.

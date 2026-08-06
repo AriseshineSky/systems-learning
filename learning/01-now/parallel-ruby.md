@@ -1,30 +1,17 @@
-# Parallel Track B — Ruby
+# Parallel Track B — Ruby（暂停）
 
-**Only after today's DB focus in `now.md`. Lower priority than OS (`parallel.md`).**
+**Status: paused（方案 A）**
 
----
+工作之余优先 [Rails Store](./parallel-rails-store.md)。  
+Store 轨（P1–P4）完成后再恢复 R1–R4。
 
-## Ruby — R1 RubyMonk Ascent
+原计划摘要：
 
-**Track:** ruby-engineering (tertiary)  
-**Started:** 2026-06-06  
-**Target:** block/self 直觉；能解释闭包
+| Phase | Task | 状态 |
+|-------|------|------|
+| R1 | RubyMonk Ascent | paused |
+| R2 | Metaprogramming Workshop | paused |
+| R3 | Rails Internals | paused |
+| R4 | OO Design | paused |
 
-### This week's Ruby goal（有余力时）
-
-- [ ] RubyMonk Primer Ascent — 前 3 章（archive.org）
-- [ ] IRB 实验：`self` 在 class / instance method 中的值
-- [ ] Notes: 2 条要点写入 `25-ruby/notes/r1-rubymonk.md`
-
-### Materials
-
-See: [tasks/r1_rubymonk_ascent.md](../25-ruby/tasks/r1_rubymonk_ascent.md)
-
-### Time budget
-
-**~2 hrs/week** — DB 主轨和 OS 副轨完成后。整周太忙可跳过。
-
-### Skip this week
-
-- Paolo 工作坊 clone（留给 R2）
-- 读 ActiveRecord 源码（留给 R3）
+详见 [ruby-engineering-track.md](../00-roadmap/ruby-engineering-track.md) 与 `25-ruby/tasks/`。

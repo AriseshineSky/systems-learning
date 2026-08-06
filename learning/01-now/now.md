@@ -34,8 +34,9 @@ See: [tasks/e1_storage_and_indexes.md](../10-database/tasks/e1_storage_and_index
 
 ---
 
-## Parallel track (after today's DB focus)
+## Parallel tracks
 
-OS parallel A: [`parallel.md`](./parallel.md) — O1 this week, L01–L02.  
-Ruby parallel B: [`parallel-ruby.md`](./parallel-ruby.md) — R1 RubyMonk when time allows.  
-Master schedule: [`master-schedule.md`](../00-roadmap/master-schedule.md)
+- **Rails Store（工作之余主攻）:** [`parallel-rails-store.md`](./parallel-rails-store.md) — P1-A Bootstrap  
+- OS parallel A: [`parallel.md`](./parallel.md) — O1 when time allows  
+- Ruby R1–R4: [`parallel-ruby.md`](./parallel-ruby.md) — **paused** until Store done  
+- Master schedule: [`master-schedule.md`](../00-roadmap/master-schedule.md)

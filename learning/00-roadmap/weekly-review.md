@@ -12,8 +12,9 @@ Copy this section each week. Fill in on Sunday (or your review day).
 - [ ] Registry items moved to new status:
 - [ ] EXPLAIN / hands-on examples added to `10-database/notes/` (DB track)
 - [ ] OS notes or experiments added to `15-operating-systems/notes/` (OS track)
-- [ ] Ruby notes added to `25-ruby/notes/` (Ruby track, if active)
-- [ ] 对齐周？对照 [master-schedule.md](./master-schedule.md) 检查 DB↔OS↔Ruby
+- [ ] Rails Store notes in `26-rails-store/notes/` (if active)
+- [ ] Ruby notes in `25-ruby/notes/` (paused until Store done)
+- [ ] 对齐周？对照 [master-schedule.md](./master-schedule.md) + [rails-store-roadmap.md](./rails-store-roadmap.md)
 
 ### What blocked me?
 
@@ -38,7 +39,8 @@ Copy this section each week. Fill in on Sunday (or your review day).
 | OS lectures (jyy) | |
 | DB hands-on (EXPLAIN) | |
 | OS hands-on (strace/gdb/pthread) | |
-| Ruby (RubyMonk/koans/源码) | |
+| Rails Store (tutorials) | |
+| Ruby (paused) | |
 | Paper reading | |
 | Notes writing | |
 

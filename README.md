@@ -1,45 +1,47 @@
 # Systems Learning System
 
-Task-driven knowledge system for **Rails / Java / Go backend engineers**:
+Task-driven knowledge system for **Rails / Java / Go backend engineers**.
 
-- **DB primary track** — CMU 15-445 (selected lectures): indexes, EXPLAIN, transactions, MVCC, optimizer — not kernel development
-- **OS parallel A** — [NJU 2026 操作系统原理](https://www.bilibili.com/video/BV1eqEA6JEZA)（蒋炎岩 / jyy）
-- **Ruby parallel B** — Rails advanced topics, all free resources (demystify magic, metaprogramming, OO design)
+Repo: [`AriseshineSky/systems-learning`](https://github.com/AriseshineSky/systems-learning)  
+（原名 `database-learning`，已改名以覆盖多轨。）
 
-**Not a file dump.** Every material must be linked to a task.
+**Not a file dump.** Every material must be linked to a task.  
+**No Google Calendar required** — schedule lives in Markdown (`now` / roadmap / weekly-review).
 
-## Who this is for
+## Tracks（方案 A）
 
-You want advanced backend fluency: read EXPLAIN, design indexes, debug transactions, tune PostgreSQL — without building database kernels or publishing papers.
+| Track | Role | Dashboard |
+|-------|------|-----------|
+| **Rails Store** | 工作之余主攻 | [`parallel-rails-store.md`](learning/01-now/parallel-rails-store.md) |
+| **DB** | 系统知识主轨 | [`now.md`](learning/01-now/now.md) |
+| **OS** | 副轨 A | [`parallel.md`](learning/01-now/parallel.md) |
+| **Ruby R1–R4** | 暂停（Store 后再开） | [`parallel-ruby.md`](learning/01-now/parallel-ruby.md) |
 
-**Target:** Database knowledge > 95% of application developers, < database kernel engineers.
+Philosophies:
 
-Read track philosophies:
-
+- [Rails Store track](learning/00-roadmap/rails-store-track.md)
 - [DB engineering track](learning/00-roadmap/engineering-track.md)
 - [OS engineering track](learning/00-roadmap/os-engineering-track.md)
-- [Ruby engineering track](learning/00-roadmap/ruby-engineering-track.md)
+- [Ruby engineering track](learning/00-roadmap/ruby-engineering-track.md)（paused）
 
 ## Daily workflow
 
 ```bash
-# 1. 今天主任务（DB）
+cd ~/src/systems-learning
+
+# 工作之余深耕 Rails → 只看这个
+cat learning/01-now/parallel-rails-store.md
+cat learning/26-rails-store/tasks/<task>.md
+
+# 系统主轨（DB）
 cat learning/01-now/now.md
 
-# 2. 主任务完成后 — 副轨
-cat learning/01-now/parallel.md        # OS（优先）
-cat learning/01-now/parallel-ruby.md   # Ruby（有余力）
+# 有余力：OS
+cat learning/01-now/parallel.md
 
-# 3. 查资料 registry
-cat learning/00-roadmap/registry.md
-
-# 4. 三轨时间表
-cat learning/00-roadmap/master-schedule.md
-
-# 5. 执行 checklist
-cat learning/10-database/tasks/<task>.md
-cat learning/15-operating-systems/tasks/<task>.md
-cat learning/25-ruby/tasks/<task>.md
+# 全局队列 / 周回顾
+cat learning/02-backlog/backlog.md
+cat learning/00-roadmap/weekly-review.md
 ```
 
 ## Structure
@@ -47,21 +49,23 @@ cat learning/25-ruby/tasks/<task>.md
 ```
 learning/
 ├── 00-roadmap/
+│   ├── rails-store-track.md / rails-store-roadmap.md
 │   ├── engineering-track.md      # DB
-│   ├── os-engineering-track.md   # OS
-│   ├── ruby-engineering-track.md # Ruby
-│   ├── master-schedule.md        # 三轨对齐
-│   └── registry.md
+│   ├── os-engineering-track.md
+│   ├── ruby-engineering-track.md # paused
+│   ├── master-schedule.md
+│   └── weekly-review.md
 ├── 01-now/
-│   ├── now.md            # 主任务（DB）
-│   ├── parallel.md       # 副轨 A（OS）
-│   └── parallel-ruby.md  # 副轨 B（Ruby）
+│   ├── now.md                    # DB
+│   ├── parallel-rails-store.md   # Rails Store ★
+│   ├── parallel.md               # OS
+│   └── parallel-ruby.md          # paused
 ├── 02-backlog/
-├── 10-database/          # CMU 15-445
-├── 15-operating-systems/ # NJU OS (jyy)
-├── 25-ruby/              # Rails 进阶（免费资料）
-│   ├── tasks/            # r1–r4
-│   ├── talks/            # 演讲卡片
+├── 10-database/
+├── 15-operating-systems/
+├── 25-ruby/                      # R1–R4 paused
+├── 26-rails-store/               # P1-A … P4
+│   ├── tasks/
 │   └── notes/
 ├── 20-architecture/
 └── 30-leetcode/
@@ -69,16 +73,24 @@ learning/
 
 ## Rules
 
-1. **Only one primary task in `now.md`** — OS / Ruby 放 parallel 文件，主轨完成后再做。
-2. **Priority:** DB > OS > Ruby > LeetCode.
-3. **New material → must link to a task** — otherwise it is dead weight.
-4. **Store cards, not PDFs** — link to source + write your understanding.
-5. **Status must flow:** `not started → reading → understanding → mastered`
+1. **One active sub-project per dashboard** — Store 看 `parallel-rails-store.md`，DB 看 `now.md`。
+2. **Priority（方案 A）:** Rails Store（工作之余）≈ DB（系统日）> OS > Ruby(paused) > LeetCode。
+3. **New material → must link to a task.**
+4. **Store cards, not PDFs** — link + your understanding.
+5. **Status:** `not started → reading → understanding → mastered`
 6. **Weekly review** — `learning/00-roadmap/weekly-review.md`
+7. **App code ≠ this repo** — Rails 应用另开仓库；进度与笔记只写这里。
 
 ## Course resources
 
-### Database (primary)
+### Rails Store (after-work focus)
+
+| Resource | Link |
+|----------|------|
+| Rails Tutorials | https://rubyonrails.org/docs/tutorials |
+| Rails Guides | https://guides.rubyonrails.org/ |
+
+### Database
 
 | Resource | Link |
 |----------|------|
@@ -93,15 +105,9 @@ learning/
 | NJU 2026 OS (jyy) | https://www.bilibili.com/video/BV1eqEA6JEZA |
 | Course wiki | https://jyywiki.cn |
 
-### Ruby (parallel B, all free)
+### Ruby (paused)
 
-| Resource | Link |
-|----------|------|
-| RubyMonk 存档 | via [makandra curriculum](https://makandracards.com/curriculum/35019-advanced-ruby-metaprogramming-dsls-3d) |
-| Paolo workshop | https://github.com/nusco/ruby-metaprogramming-tokyo |
-| Metaprogramming koans | https://github.com/sathish316/metaprogramming_koans |
-| Browser challenges | https://willnet.github.io/metaprogramming-challenges-in-ruby/ |
-| Conference talks | https://www.rubyevents.org/ |
+见 [ruby-engineering-track.md](learning/00-roadmap/ruby-engineering-track.md) — Store 完成后再恢复。
 
 ## Optional kernel track
 
