@@ -21,3 +21,7 @@
 ## Notes
 
 <!-- 专题理解写在下面 -->
+
+### Authentication Generator（选型对照）
+
+详见 [`auth-sorcery-devise-rails8.md`](./auth-sorcery-devise-rails8.md)：Devise = 功能箱/Engine；Sorcery = 轻量 mixin；Rails 8 = 代码进你的 app + Session 模型。本轨跟官方用原生。

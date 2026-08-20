@@ -35,6 +35,11 @@
 - [ ] Notes: `notes/p2-auth.md`（核心模型 + 与旧项目差异 + 仍不懂的问题）
 - [ ] 在 `notes/rails8-topics.md` 勾选 Authentication Generator（若适用）
 
+## Background（选型）
+
+- 对比笔记：[`notes/auth-sorcery-devise-rails8.md`](../notes/auth-sorcery-devise-rails8.md)（Sorcery / Devise / Rails 8 原生）
+- 本轨默认：Rails 8 `generate authentication`；Devise/Sorcery 仅作对照，不替代官方路径
+
 ## Skip
 
 - Wishlist / Reviews
