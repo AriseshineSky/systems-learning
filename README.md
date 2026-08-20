@@ -12,7 +12,8 @@ Repo: [`AriseshineSky/systems-learning`](https://github.com/AriseshineSky/system
 
 | Track | Role | Dashboard |
 |-------|------|-----------|
-| **Rails Store** | 工作之余主攻 | [`parallel-rails-store.md`](learning/01-now/parallel-rails-store.md) |
+| **Rails Store** | 工作之余主攻（与 CSS 交替） | [`parallel-rails-store.md`](learning/01-now/parallel-rails-store.md) |
+| **CSS** | 工作之余主攻（与 Store 交替） | [`parallel-css.md`](learning/01-now/parallel-css.md) |
 | **DB** | 系统知识主轨 | [`now.md`](learning/01-now/now.md) |
 | **OS** | 副轨 A | [`parallel.md`](learning/01-now/parallel.md) |
 | **Ruby R1–R4** | 暂停（Store 后再开） | [`parallel-ruby.md`](learning/01-now/parallel-ruby.md) |
@@ -20,6 +21,7 @@ Repo: [`AriseshineSky/systems-learning`](https://github.com/AriseshineSky/system
 Philosophies:
 
 - [Rails Store track](learning/00-roadmap/rails-store-track.md)
+- [CSS engineering track](learning/00-roadmap/css-engineering-track.md)
 - [DB engineering track](learning/00-roadmap/engineering-track.md)
 - [OS engineering track](learning/00-roadmap/os-engineering-track.md)
 - [Ruby engineering track](learning/00-roadmap/ruby-engineering-track.md)（paused）
@@ -32,6 +34,10 @@ cd ~/src/systems-learning
 # 工作之余深耕 Rails → 只看这个
 cat learning/01-now/parallel-rails-store.md
 cat learning/26-rails-store/tasks/<task>.md
+
+# 工作之余 CSS 日（与 Rails 交替）
+cat learning/01-now/parallel-css.md
+cat learning/27-css/tasks/<task>.md
 
 # 系统主轨（DB）
 cat learning/01-now/now.md
@@ -67,14 +73,17 @@ learning/
 ├── 26-rails-store/               # P1-A … P4
 │   ├── tasks/
 │   └── notes/
+├── 27-css/                       # C1–C8
+│   ├── tasks/
+│   └── notes/
 ├── 20-architecture/
 └── 30-leetcode/
 ```
 
 ## Rules
 
-1. **One active sub-project per dashboard** — Store 看 `parallel-rails-store.md`，DB 看 `now.md`。
-2. **Priority（方案 A）:** Rails Store（工作之余）≈ DB（系统日）> OS > Ruby(paused) > LeetCode。
+1. **One active sub-project per dashboard** — Store 看 `parallel-rails-store.md`，CSS 看 `parallel-css.md`，DB 看 `now.md`。
+2. **Priority（方案 A）:** Rails Store ≈ CSS（工作之余，交替）≈ DB（系统日）> OS > Ruby(paused) > LeetCode。
 3. **New material → must link to a task.**
 4. **Store cards, not PDFs** — link + your understanding.
 5. **Status:** `not started → reading → understanding → mastered`
@@ -89,6 +98,15 @@ learning/
 |----------|------|
 | Rails Tutorials | https://rubyonrails.org/docs/tutorials |
 | Rails Guides | https://guides.rubyonrails.org/ |
+
+### CSS (after-work focus, alternates with Rails Store)
+
+| Resource | Link |
+|----------|------|
+| MDN Learn CSS | https://developer.mozilla.org/en-US/docs/Learn/CSS |
+| web.dev Learn CSS | https://web.dev/learn/css/ |
+| Flexbox Froggy | https://flexboxfroggy.com/ |
+| CSS Grid Garden | https://cssgridgarden.com/ |
 
 ### Database
 
